@@ -1,13 +1,8 @@
 {
 	"short_name": "Work Optimizer",
 	"name": "Work Optimizer",
-	"icon": [
-		{
-			"src": "icon.png",
-			"sizes": "192x192",
-			"types": "image/png"
-		}
-	],
+	
+
 	"start_url": "",
 	"Theme-color": "#3F729b",
 	"background_color": "#ffffff",

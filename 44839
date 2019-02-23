@@ -1,0 +1,39 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Montserrant');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body {
+  margin: 20px;
+  background: #ffffff;
+}
+svg{
+  padding: 4px;
+  background: white;
+
+}
+h3, h2{
+  font-family: "Montserrat";
+}
+.card{
+  padding: 8px;
+}
+text{
+  font-family: "Montserrat";
+  font-size: 10px;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-danger{
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+.error{
+  background: #ffbb33 !important;
+  color: white !important;
+}
+li{
+  font-family: "Lora";
+}

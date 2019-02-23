@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Work Optimizer</title>
+    <meta name="theme-color" content="#3F729b">
+    <link rel="manifest" href="manifest.json">
+    <link rel='icon'href='icon.png'>
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js'></script>
+    <meta charset="UTF-8">
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Notification.js CDN -->
+    <script src="https://dl-web.dropbox.com/s/bjt27cz69yh4l3i/notification.js?dl=0"></script> 
+    <!-- Fontawesome Icons CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/css/mdb.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="card">
+      <div class="row">
+        <div class="col-sm-10">
+          <input type="text" id="hour" class="form-control" placeholder="Working Hours"/>
+        </div>
+        <div class="col-sm-2">
+          <button onclick="dataInput()" class="btn btn-success btn-sm"><i class="fas fa-plus"></i> Add</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h3 class="text-center">Work History</h3>
+
+    <!-- SVG Graph  -->
+    <div class="card">
+      <center>
+        <div class="card-img-top">
+          <svg width="310" height="300" class="">
+            <line stroke="black" x1="15" y1="15" x2="15" y2="250"/>
+            <line stroke="black" x1="15" y1="250" x2="300" y2="250"/>
+            <polyline points="" stroke="black" fill="none" stroke-width="1.5"/>
+            <!--  Points -->
+            <circle cx="15" r="2" fill="black"/>
+            <circle r="2" fill="black"/>
+            <circle r="2" fill="black"/>
+            <circle r="2" fill="black"/>
+            <circle r="2" fill="black"/>
+            <circle r="2" fill="black"/>
+            <circle r="2" fill="black"/>
+
+            <text x='26' y='268' style='font-size: 13px'>Mon</text>
+            <text x='68' y='268' style='font-size: 13px'>Tue</text>
+            <text x='106' y='268' style='font-size: 13px'>Wed</text>
+            <text x='150' y='268' style='font-size: 13px'>Thu</text>
+            <text x='195' y='268' style='font-size: 13px'>Fri</text>
+            <text x='231' y='268' style='font-size: 13px'>Sat</text>
+            <text x='274' y='268' style='font-size: 13px'>Sun</text>
+          </svg>
+        </div>
+      </center>
+      <div class="card-body">
+        <center>
+          <button class="btn btn-danger" onclick="resetGraph()"><i class="fa fa-trash-alt"></i> Reset</button>
+        </center>
+        <h2 class="text-center"><i class="fa fa-chart-line"></i> Statistics</h2>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h3><span class="badge unique-color wek">0</span></h3> Working Hours/Week
+            </li>
+            <li class="list-group-item">
+              <h3><span class="badge unique-color avg">0</span></h3>Average Hour(s)/Day
+            </li>
+            <li class="list-group-item">
+              <h3><span class="badge  unique-color high">0</span></h3>Hours of highest working
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

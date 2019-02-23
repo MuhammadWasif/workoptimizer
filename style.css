@@ -16,6 +16,7 @@ h3, h2{
 }
 .card{
   padding: 8px;
+  margin: 0px 7px;
 }
 text{
   font-family: "Montserrat";

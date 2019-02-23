@@ -3,7 +3,7 @@
 	"name": "Work Optimizer",
 	
 
-	"start_url": "",
+	"start_url": "/",
 	"Theme-color": "#3F729b",
 	"background_color": "#ffffff",
 	"display": "standalone"
